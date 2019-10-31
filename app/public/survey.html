@@ -17,128 +17,126 @@
         <h1>Survery Questions</h1>
         <hr>
         <h2>About You</h2>
-        <label for="exampleFormControlInput1">Name</label>
-        <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="John Smith">
+        <h4>Name (Required)</h4>
+        <input type="text" name="" id="name" class="form-control" placeholder="John Smith" required>
         <br>
-        <p>Link to Photo image</p>
+        <h4>Link to Photo image(Required)</h4>
         <input type="text" id="photo" class="form-control" required="">
         <br>
-        <div class="form-group">
-            <label for="exampleFormControlSelect1"><h3>Question 1</h3></label>
-            <h4>Your so passionte about coding.</h4>
-            <select class="form-control-md" id="exampleFormControlSelect">
-                      <option>1</option>
-                      <option>2</option>
-                      <option>3</option>
-                      <option>4</option>
-                      <option>5</option>
+        <hr>
+        <h3>Question 1</h3>
+        <h4>Your so passionte about coding.</h4>
+        <select data-placeholder="" class="chosen-select" id="q1">
+                      <option value="1">1 (Strongly Disagree)</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5" selected>5 (Strongly Agree)</option>>5</option>
                     </select>
-        </div>
-        <div class="form-group">
-            <label for="exampleFormControlSelect1"><h3>Question 2 </h3></label>
-            <h4>Most likey to take lead in a project.</h4>
-            <select class="form-control-md" id="exampleFormControlSelect">
-                          <option>1</option>
-                          <option>2</option>
-                          <option>3</option>
-                          <option>4</option>
-                          <option>5</option>
-                        </select>
-        </div>
-        <div class="form-group">
-            <label for="exampleFormControlSelect1"><h3>Question 3</h3></label>
-            <h4>Your so engertic when working in a team.</h4>
-            <select class="form-control-md" id="exampleFormControlSelect">
-                              <option>1</option>
-                              <option>2</option>
-                              <option>3</option>
-                              <option>4</option>
-                              <option>5</option>
-                            </select>
-        </div>
-        <div class="form-group">
-            <label for="exampleFormControlSelect1"><h3>Question 4</h3></label>
-            <h4>You enjoy the learning new technologies.</h4>
-            <select class="form-control-md" id="exampleFormControlSelect">
-                                  <option>1</option>
-                                  <option>2</option>
-                                  <option>3</option>
-                                  <option>4</option>
-                                  <option>5</option>
-                                </select>
-        </div>
-        <div class="form-group">
-            <label for="exampleFormControlSelect1"><h3>Question 5</h3></label>
-            <h4>You are a outgoing person.</h4>
-            <select class="form-control-md" id="exampleFormControlSelect">
-                                      <option>1</option>
-                                      <option>2</option>
-                                      <option>3</option>
-                                      <option>4</option>
-                                      <option>5</option>
-                                    </select>
-        </div>
-        <div class="form-group">
-            <label for="exampleFormControlSelect1"><h3>Question 6</h3></label>
-            <h4>The person to ask for help.</h4>
-            <select class="form-control-md" id="exampleFormControlSelect">
-                                          <option>1</option>
-                                          <option>2</option>
-                                          <option>3</option>
-                                          <option>4</option>
-                                          <option>5</option>
-                                        </select>
-        </div>
-        <div class="form-group">
-            <label for="exampleFormControlSelect1"><h3>Question 7</h3></label>
-            <h4>Your a family person.</h4>
-            <select class="form-control-md" id="exampleFormControlSelect">
-                          <option>1</option>
-                          <option>2</option>
-                          <option>3</option>
-                          <option>4</option>
-                          <option>5</option>
-                        </select>
-        </div>
-        <div class="form-group">
-            <label for="exampleFormControlSelect1"><h3>Question 8</h3></label>
-            <h4>code is for life.</h4>
-            <select class="form-control-md" id="exampleFormControlSelect">
-                              <option>1</option>
-                              <option>2</option>
-                              <option>3</option>
-                              <option>4</option>
-                              <option>5</option>
-                            </select>
-        </div>
-        <div class="form-group">
-            <label for="exampleFormControlSelect1"><h3>Question 9</h3></label>
-            <h4>Likes to take vacation often.</h4>
-            <select class="form-control-md" id="exampleFormControlSelect">
-                                  <option>1</option>
-                                  <option>2</option>
-                                  <option>3</option>
-                                  <option>4</option>
-                                  <option>5</option>
-                                </select>
-        </div>
-        <div class="form-group">
-            <label for="exampleFormControlSelect1"><h3>Question 10</h3></label>
-            <h4>Blames other's instead of solving the problem as a team.</h4>
-            <select class="form-control-md" id="exampleFormControlSelect">
-                                      <option>1</option>
-                                      <option>2</option>
-                                      <option>3</option>
-                                      <option>4</option>
-                                      <option>5</option>
-                                    </select>
-        </div>
         <br>
-        <button type="button" class="btn btn-primary btn-lg btn-block">Submit</button>
+        <h3>Question 2</h3>
+        <h4>Your an a inside person.</h4>
+        <select data-placeholder="" class="chosen-select" id="q2">
+                      <option value="1">1 (Strongly Disagree)</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5" selected>5 (Strongly Agree)</option>>5</option>
+                    </select>
+        <br>
+        <h3>Question 3</h3>
+        <h4>Your so engertic when working in a team.</h4>
+        <select data-placeholder="" class="chosen-select" id="q3">
+              <option value="1">1 (Strongly Disagree)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5" selected>5 (Strongly Agree)</option>>5</option>
+            </select>
+
+
+        <h3>Question 4</h3>
+        <h4>You enjoy the learning new technologies.</h4>
+        <select data-placeholder="" class="chosen-select" id="q4">
+              <option value="1">1 (Strongly Disagree)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5" selected>5 (Strongly Agree)</option>>5</option>
+            </select>
+
+
+        <h3>Question 5</h3>
+        <h4>You are a outgoing person.</h4>
+        <select data-placeholder="" class="chosen-select" id="q5">
+              <option value="1">1 (Strongly Disagree)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5" selected>5 (Strongly Agree)</option>>5</option>
+            </select>
+
+
+        <h3>Question 6</h3>
+        <h4>The person to ask for help.</h4>
+        <select data-placeholder="" class="chosen-select" id="q6">
+              <option value="1">1 (Strongly Disagree)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5" selected>5 (Strongly Agree)</option>>5</option>
+            </select>
+
+
+        <h3>Question 7</h3>
+        <h4>Your a family person.</h4>
+        <select data-placeholder="" class="chosen-select" id="q7">
+              <option value="1">1 (Strongly Disagree)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5" selected>5 (Strongly Agree)</option>>5</option>
+            </select>
+
+
+        <h3>Question 8</h3>
+        <h4>code is for life.</h4>
+        <select data-placeholder="" class="chosen-select" id="q8">
+              <option value="1">1 (Strongly Disagree)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5" selected>5 (Strongly Agree)</option>>5</option>
+            </select>
+
+
+        <h3>Question 9</h3>
+        <h4>Likes to take vacation often.</h4>
+        <select data-placeholder="" class="chosen-select" id="q9">
+              <option value="1">1 (Strongly Disagree)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5" selected>5 (Strongly Agree)</option>>5</option>
+            </select>
+
+
+        <h3>Question 10</h3>
+        <h4>Blames other's instead of solving the problem as a team.</h4>
+        <select data-placeholder="" class="chosen-select" id="q10">
+              <option value="1">1 (Strongly Disagree)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5" selected>5 (Strongly Agree)</option>>5</option>
+            </select>
+
+        <br>
+        <button type="button" class="btn btn-primary btn-lg btn-block" id='Submit'>Submit</button>
         <hr>
         <footer class='footer'>
             <div class="container">
-                <p><a href="/api/friends">Api friends list</a>
+                <p><a href="/api/friends">Api friends list</a> |
                     <a href="https://github.com/ErikTenecela/FriendFinder">Github Repo</a></p>
             </div>
         </footer>
