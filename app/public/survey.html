@@ -132,7 +132,7 @@
             </select>
 
         <br>
-        <button type="button" class="btn btn-primary btn-lg btn-block" id='Submit'>Submit</button>
+        <button type="button" class="btn btn-primary btn-lg btn-block" id='Submit' href="/api/friends">Submit</button>
         <hr>
         <footer class='footer'>
             <div class="container">
@@ -148,3 +148,26 @@
 </body>
 
 </html>
+<script>
+    const friendsInput = {
+        name: $('#name').val(),
+        photo: $('#photo').val(),
+        scores: [
+            $('#q1').val(),
+            $('#q2').val(),
+            $('#q3').val(),
+            $('#q4').val(),
+            $('#q5').val(),
+            $('#q6').val(),
+            $('#q7').val(),
+            $('#q8').val(),
+            $('#q9').val(),
+            $('#q10').val()
+        ]
+    }
+
+    $(document).on('click', 'submit', friendsInput, function() {
+        return friendsInput.json()
+    })
+    module.exports = friendsInput
+</script>
