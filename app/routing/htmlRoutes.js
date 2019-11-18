@@ -5,19 +5,11 @@ const app = express();
 
 
 module.exports = app => {
-    app.get('/:file', (req, res) => {
-        const { file: filePath } = req.params;
-        let fileName;
+    app.get("/survey", function(req, res) {
+        res.sendFile(path.join(__dirname + "/../public/survey.html"));
+    });
 
-        switch (filePath) {
-            case 'home':
-            case 'survey':
-                fileName = filePath;
-                break;
-            default:
-                fileName = 'home';
-        }
-
-        res.sendFile(path.join(__dirname, `.././public/${fileName}.html`))
-    })
+    app.use(function(req, res) {
+        res.sendFile(path.join(__dirname + "/../public/home.html"));
+    });
 }
