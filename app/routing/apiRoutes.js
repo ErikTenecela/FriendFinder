@@ -6,19 +6,19 @@ module.exports = function(app) {
     });
 
     app.post("/api/friends", function(req, res) {
-        var totalDifference = 0;
+        let totalDifference = 0;
 
-        var bestMatch = {
+        let bestMatch = {
             name: "",
             photo: "",
             friendDifference: 1000
         };
 
-        var userData = req.body;
-        var userName = userData.name;
-        var userScores = userData.scores;
+        let userData = req.body;
+        let userName = userData.name;
+        let userScores = userData.scores;
 
-        var b = userScores.map(function(item) {
+        let b = userScores.map(function(item) {
             return parseInt(item, 10);
         });
         userData = {
@@ -30,7 +30,7 @@ module.exports = function(app) {
         console.log("Name: " + userName);
         console.log("User Score " + userScores);
 
-        var sum = b.reduce((a, b) => a + b, 0);
+        let sum = b.reduce((a, b) => a + b, 0);
 
         console.log("Sum of users score " + sum);
         console.log("Best match friend diff " + bestMatch.friendDifference);
